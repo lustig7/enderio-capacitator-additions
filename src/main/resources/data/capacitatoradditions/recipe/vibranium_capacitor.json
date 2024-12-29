@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "capacitatoradditions:allthemodium_capacitor"
+    },
+    "G": {
+      "tag": "enderio:grains_of_infinity"
+    },
+    "I": {
+      "tag": "allthemodium:vibranium_ingot"
+    }
+  },
+  "pattern": [
+    " I ",
+    "CGC",
+    " I "
+  ],
+  "result": {
+    "count": 1,
+    "id": "capacitatoradditions:vibranium_capacitor"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "tag": "minecraft:coal"
+    },
+    "A": {
+      "tag": "allthemodium:allthemodium_ingot"
+    },
+    "M": {
+      "tag": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    " AC",
+    "AMA",
+    "CA "
+  ],
+  "result": {
+    "count": 1,
+    "id": "capacitatoradditions:allthemodium_capacitor"
+  }
+}
