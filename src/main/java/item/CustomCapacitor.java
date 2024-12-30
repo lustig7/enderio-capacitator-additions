@@ -13,12 +13,11 @@ import net.minecraft.world.item.TooltipFlag;
 import java.util.List;
 
 public class CustomCapacitor extends Item {
-    private final DataComponentType<CapacitorData> dataType;
+
     private final CapacitorData capacitorData;
 
-    public CustomCapacitor(Properties properties, DataComponentType<CapacitorData> dataType, CapacitorData capacitorData) {
+    public CustomCapacitor(Properties properties, CapacitorData capacitorData) {
         super(properties);
-        this.dataType = dataType;
         this.capacitorData = capacitorData;
     }
 
@@ -29,9 +28,6 @@ public class CustomCapacitor extends Item {
         return capacitorData;
     }
 
-    public DataComponentType<CapacitorData> getDataType() {
-        return dataType;
-    }
 
     @Override
     public void verifyComponentsAfterLoad(ItemStack stack) {

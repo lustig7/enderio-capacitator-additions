@@ -32,8 +32,6 @@ public class CapacitorAdditions {
 
     public static final String MOD_ID = "capacitatoradditions";
 
-    private static final Logger LOGGER = LogUtils.getLogger();
-
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister
             .create(Registries.CREATIVE_MODE_TAB, MOD_ID);
 
@@ -43,9 +41,9 @@ public class CapacitorAdditions {
 
                     .icon(() -> Items.unobtainium_capacitor.get().getDefaultInstance())
                     .displayItems((parameters, output) -> {
-                        output.accept(Items.unobtainium_capacitor.get());
                         output.accept(Items.allthemodium_capacitor.get());
                         output.accept(Items.vibranium_capacitor.get());
+                        output.accept(Items.unobtainium_capacitor.get());
                     }).build());
 
     public CapacitorAdditions(IEventBus modEventBus, ModContainer modContainer) {
