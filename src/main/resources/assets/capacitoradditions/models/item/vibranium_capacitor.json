@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "capacitatoradditions:item/vibranium_capacitor"
+    "layer0": "capacitoradditions:item/vibranium_capacitor"
   }
 }

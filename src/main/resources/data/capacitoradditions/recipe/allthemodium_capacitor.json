@@ -15,6 +15,6 @@
   "pattern": [" AG", "ADA", "GA "],
   "result": {
     "count": 1,
-    "id": "capacitatoradditions:allthemodium_capacitor"
+    "id": "capacitoradditions:allthemodium_capacitor"
   }
 }

@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "capacitatoradditions:allthemodium_capacitor"
+      "item": "capacitoradditions:allthemodium_capacitor"
     },
     "C": {
       "item": "enderio:powdered_coal"
@@ -15,6 +15,6 @@
   "pattern": [" I ", "ACA", " I "],
   "result": {
     "count": 1,
-    "id": "capacitatoradditions:vibranium_capacitor"
+    "id": "capacitoradditions:vibranium_capacitor"
   }
 }

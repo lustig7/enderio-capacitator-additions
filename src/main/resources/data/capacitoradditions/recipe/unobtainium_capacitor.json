@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "C": {
-      "item": "capacitatoradditions:vibranium_capacitor"
+      "item": "capacitoradditions:vibranium_capacitor"
     },
     "G": {
       "item": "enderio:grains_of_infinity"
@@ -15,6 +15,6 @@
   "pattern": [" I ", "CGC", " I "],
   "result": {
     "count": 1,
-    "id": "capacitatoradditions:unobtainium_capacitor"
+    "id": "capacitoradditions:unobtainium_capacitor"
   }
 }
