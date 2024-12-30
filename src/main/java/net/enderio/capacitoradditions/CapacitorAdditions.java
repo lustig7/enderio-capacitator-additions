@@ -27,38 +27,33 @@ import java.util.Map;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(CapacitorAdditions.MOD_ID)
-public class CapacitorAdditions
-{
+public class CapacitorAdditions {
 
     public static final String MOD_ID = "capacitatoradditions";
 
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MOD_ID);
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister
+            .create(Registries.CREATIVE_MODE_TAB, MOD_ID);
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CAPACITOR_TAB = CREATIVE_MODE_TABS.register("capacitor_tab", () -> CreativeModeTab.builder()
-            .title(Component.translatable("tab.capacitatoradditions.capacitor")) //The language key for the title of your CreativeModeTab
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CAPACITOR_TAB = CREATIVE_MODE_TABS
+            .register("capacitor_tab", () -> CreativeModeTab.builder()
+                    .title(Component.translatable("tab.capacitatoradditions.capacitor"))
 
-            .icon(() -> Items.unobtanium_capacitor.get().getDefaultInstance())
-            .displayItems((parameters, output) -> {
-                output.accept(Items.unobtanium_capacitor.get());
-                output.accept(Items.allthemodium_capacitor.get());
-                output.accept(Items.vibranium_capacitor.get());
-            }).build());
+                    .icon(() -> Items.unobtainium_capacitor.get().getDefaultInstance())
+                    .displayItems((parameters, output) -> {
+                        output.accept(Items.unobtainium_capacitor.get());
+                        output.accept(Items.allthemodium_capacitor.get());
+                        output.accept(Items.vibranium_capacitor.get());
+                    }).build());
 
-
-    public CapacitorAdditions(IEventBus modEventBus, ModContainer modContainer)
-    {
+    public CapacitorAdditions(IEventBus modEventBus, ModContainer modContainer) {
 
         modEventBus.addListener(this::commonSetup);
-
 
         Items.register(modEventBus);
 
         CREATIVE_MODE_TABS.register(modEventBus);
-
-
-
 
         NeoForge.EVENT_BUS.register(this);
 
@@ -66,18 +61,13 @@ public class CapacitorAdditions
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
+    }
 
+    private void commonSetup(final FMLCommonSetupEvent event) {
 
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event)
-    {
-
-    }
-
-    private void addCreative(BuildCreativeModeTabContentsEvent event)
-    {
-
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
 
     }
 
@@ -85,18 +75,14 @@ public class CapacitorAdditions
 
     }
 
-
-
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
     }
 
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents
-    {
+    public static class ClientModEvents {
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
+        public static void onClientSetup(FMLClientSetupEvent event) {
 
         }
     }

@@ -13,28 +13,6 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
-
 public class Items {
 
-    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(CapacitorAdditions.MOD_ID);
-
-    public static final DeferredItem<Item> vibranium_capacitor = ITEMS.register(
-            "vibranium_capacitor",
-            () -> new Item(new Item.Properties()));
-
-
-    public static final DeferredItem<Item> allthemodium_capacitor = ITEMS.register(
-            "allthemodium_capacitor",
-            () -> new Item(new Item.Properties()));
-
-    public static final DeferredItem<Item> unobtanium_capacitor = ITEMS.register(
-            "unobtanium_capacitor",
-            () -> new Item(new Item.Properties()));
-
-
-
-
-    public static void register(IEventBus eventBus) {
-        ITEMS.register(eventBus);
-    }
 }

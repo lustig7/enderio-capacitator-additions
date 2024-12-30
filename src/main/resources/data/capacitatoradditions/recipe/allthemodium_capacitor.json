@@ -2,21 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "C": {
-      "tag": "minecraft:coal"
+    "D": {
+      "item": "minecraft:diamond"
     },
     "A": {
-      "tag": "allthemodium:allthemodium_ingot"
+      "item": "allthemodium:allthemodium_ingot"
     },
-    "M": {
-      "tag": "minecraft:gold_ingot"
+    "G": {
+      "item": "enderio:grains_of_infinity"
     }
   },
-  "pattern": [
-    " AC",
-    "AMA",
-    "CA "
-  ],
+  "pattern": [" AG", "ADA", "GA "],
   "result": {
     "count": 1,
     "id": "capacitatoradditions:allthemodium_capacitor"
