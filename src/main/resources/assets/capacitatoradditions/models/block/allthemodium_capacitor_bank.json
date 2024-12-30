@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "capacitatoradditions:block/allthemodium_capacitor_bank"
+  }
+}

@@ -25,7 +25,6 @@ public class CustomCapacitor extends Item {
 
     @NotNull
     public CapacitorData getCapacitorData(@NotNull ItemStack stack) {
-        // Return the capacitor data tied to this item
         return capacitorData;
     }
 
@@ -36,7 +35,7 @@ public class CustomCapacitor extends Item {
     @Override
     public void verifyComponentsAfterLoad(ItemStack stack) {
         if(stack.get(ModDataComponents.CAPACITOR_DATA_TYPE) == null) {
-            stack.set(ModDataComponents.CAPACITOR_DATA_TYPE, getCapacitorData(stack));
+            stack.set(ModDataComponents.CAPACITOR_DATA_TYPE, this.getCapacitorData(stack));
         }
 
     }

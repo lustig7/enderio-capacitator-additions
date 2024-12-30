@@ -2,5 +2,7 @@
   "item.capacitatoradditions.allthemodium_capacitor": "Allthemodium Capacitator",
   "item.capacitatoradditions.vibranium_capacitor": "Vibranium Capacitor",
   "item.capacitatoradditions.unobtainium_capacitor": "Unobtainium Capacitor",
-  "tab.capacitatoradditions.capacitor": "Capacitors"
+  "tab.capacitatoradditions.capacitor": "Capacitors",
+
+  "block.capacitatoradditions.allthemodium_capacitor_bank": "Allthemodium Capacitor Bank"
 }

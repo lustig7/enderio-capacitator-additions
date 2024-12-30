@@ -1,16 +1,16 @@
 package net.enderio.capacitoradditions;
 
-import com.enderio.base.api.capacitor.CapacitorData;
+import block.Blocks;
 import com.mojang.logging.LogUtils;
 import item.Items;
 import net.enderio.capacitoradditions.component.ModDataComponents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.InterModComms;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
@@ -23,8 +23,6 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
-
-import java.util.Map;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(CapacitorAdditions.MOD_ID)
@@ -46,6 +44,7 @@ public class CapacitorAdditions {
                         output.accept(Items.unobtainium_capacitor.get());
                         output.accept(Items.allthemodium_capacitor.get());
                         output.accept(Items.vibranium_capacitor.get());
+
                     }).build());
 
     public CapacitorAdditions(IEventBus modEventBus, ModContainer modContainer) {
@@ -53,6 +52,7 @@ public class CapacitorAdditions {
         modEventBus.addListener(this::commonSetup);
 
         Items.register(modEventBus);
+        Blocks.register(modEventBus);
 
         CREATIVE_MODE_TABS.register(modEventBus);
         ModDataComponents.register(modEventBus);
@@ -70,7 +70,9 @@ public class CapacitorAdditions {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+            event.accept(Blocks.ALLTHEMODIUM_CAPACITOR_BANK);
+        }
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event) {
