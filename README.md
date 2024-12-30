@@ -1,25 +1,43 @@
+# Ender IO Capacitor Expansion for ATM10
 
-Installation information
-=======
+This mod adds new capacitor tiers — Allthemodium, Vibranium, and Unobtanium — to Ender IO, specifically designed for the All the Mods 10 (ATM10) modpack. These capacitors enhance machine performance by significantly boosting speed and capacity, allowing for faster processing times and more efficient workflows.
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+Feature
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+# Allthemodium Capacitor:
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+- Increases machine speed and energy storage.
+- Perfect for early-tier upgrades in ATM10.
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+# Vibranium Capacitor:
 
-Additional Resources: 
+- Further enhances machine speed and capacity.
+- Ideal for mid-game setups requiring higher efficiency.
+
+# Unobtanium Capacitor:
+
+- Maximum performance boost with unparalleled processing speed and capacity.
+- Designed for late-game automation and large-scale processing.
+
+# Compatibility
+
+- Fully integrated into Ender IO's machine and energy system.
+- Balances seamlessly with ATM10 progression, leveraging custom alloys and resources.
+
+# Dependencies
+
+This mod requires the following to function:
+
+- Ender IO: Provides the base framework for machines, capacitors, and energy systems.
+- Allthemodium: Supplies the resources necessary to craft the new capacitor tiers, including Allthemodium, Vibranium, and Unobtanium.
+
+# Installation
+
+- Download and install the ATM10 modpack.
+- Add this mod to your mod folder.
+- Launch the game and enjoy enhanced machine performance!
+
 ==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+Take your energy and machine speed to the next level with these powerful capacitor upgrades!
+
+Feel free to integrate it in your own Modpacks :)
