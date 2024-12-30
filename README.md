@@ -37,7 +37,6 @@ This mod requires the following to function:
 - Add this mod to your mod folder.
 - Launch the game and enjoy enhanced machine performance!
 
-==========
 Take your energy and machine speed to the next level with these powerful capacitor upgrades!
 
 Feel free to integrate it in your own Modpacks :)
