@@ -1,17 +1,14 @@
 package net.enderio.capacitoradditions;
 
 import item.Items;
-import net.enderio.capacitoradditions.component.ModDataComponents;
+
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
-import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
-import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.fml.event.lifecycle.InterModEnqueueEvent;
 import net.neoforged.neoforge.common.NeoForge;
@@ -20,7 +17,6 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-// The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(CapacitorAdditions.MOD_ID)
 public class CapacitorAdditions {
 
@@ -47,7 +43,6 @@ public class CapacitorAdditions {
         Items.register(modEventBus);
 
         CREATIVE_MODE_TABS.register(modEventBus);
-        ModDataComponents.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
@@ -73,11 +68,5 @@ public class CapacitorAdditions {
     public void onServerStarting(ServerStartingEvent event) {
     }
 
-    @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents {
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event) {
 
-        }
-    }
 }
