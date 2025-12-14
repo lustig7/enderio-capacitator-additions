@@ -1,0 +1,32 @@
+{
+  "parent": "capacitoradditions:root",
+  "display": {
+    "icon": {
+      "id": "capacitoradditions:unobtainium_capacitor"
+    },
+    "title": {
+      "translate": "advancements.capacitoradditions.unobtainium_capacitor.title"
+    },
+    "description": {
+      "translate": "advancements.capacitoradditions.unobtainium_capacitor.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_unobtainium_capacitor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "capacitoradditions:unobtainium_capacitor"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

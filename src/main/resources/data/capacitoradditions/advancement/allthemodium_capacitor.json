@@ -1,0 +1,32 @@
+{
+  "parent": "capacitoradditions:root",
+  "display": {
+    "icon": {
+      "id": "capacitoradditions:allthemodium_capacitor"
+    },
+    "title": {
+      "translate": "advancements.capacitoradditions.allthemodium_capacitor.title"
+    },
+    "description": {
+      "translate": "advancements.capacitoradditions.allthemodium_capacitor.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_allthemodium_capacitor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "capacitoradditions:allthemodium_capacitor"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

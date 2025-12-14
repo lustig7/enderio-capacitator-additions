@@ -1,0 +1,32 @@
+{
+  "parent": "capacitoradditions:root",
+  "display": {
+    "icon": {
+      "id": "capacitoradditions:vibranium_capacitor"
+    },
+    "title": {
+      "translate": "advancements.capacitoradditions.vibranium_capacitor.title"
+    },
+    "description": {
+      "translate": "advancements.capacitoradditions.vibranium_capacitor.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_vibranium_capacitor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "capacitoradditions:vibranium_capacitor"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -113,6 +113,8 @@ configurations {
     runtimeClasspath.extendsFrom localRuntime
 }
 
+
+
 dependencies {
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
@@ -128,10 +130,10 @@ dependencies {
 
     // Example mod dependency using a file as dependency
 
-    compileOnly ("com.enderio:enderio-base:7.0.11-alpha:api")
+    compileOnly ("com.enderio:enderio-base:${enderio_version}:api")
 
     // Use EnderIO at runtime
-    runtimeOnly ("com.enderio:enderio-base:7.0.11-alpha")
+    runtimeOnly ("com.enderio:enderio-base:${enderio_version}")
 
 
     // Correct Curse Maven dependency syntax
@@ -159,7 +161,8 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
             mod_authors            : mod_authors,
             mod_description        : mod_description,
             enderio_version_range  : enderio_version_range,
-            allthemodium_version_range : allthemodium_version_range
+            allthemodium_version_range : allthemodium_version_range,
+            enderio_version           : enderio_version
     ]
     inputs.properties replaceProperties
     expand replaceProperties
@@ -197,3 +200,5 @@ idea {
         downloadJavadoc = true
     }
 }
+
+

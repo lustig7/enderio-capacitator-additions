@@ -2,5 +2,13 @@
   "item.capacitoradditions.allthemodium_capacitor": "Allthemodium Capacitor",
   "item.capacitoradditions.vibranium_capacitor": "Vibranium Capacitor",
   "item.capacitoradditions.unobtainium_capacitor": "Unobtainium Capacitor",
-  "tab.capacitoradditions.capacitor": "Capacitors"
+  "tab.capacitoradditions.capacitor": "Capacitors",
+  "advancements.capacitoradditions.root.title": "Capacitors",
+  "advancements.capacitoradditions.root.description": "Discover the power of Capacitors!",
+  "advancements.capacitoradditions.allthemodium_capacitor.title": "Is the default speed too slow?",
+  "advancements.capacitoradditions.allthemodium_capacitor.description": "Try an Allthemodium Capacitor!",
+  "advancements.capacitoradditions.vibranium_capacitor.title": "Need even more power?",
+  "advancements.capacitoradditions.vibranium_capacitor.description": "Vibranium Capacitor to the rescue!",
+  "advancements.capacitoradditions.unobtainium_capacitor.title": "Finally, the solution!",
+  "advancements.capacitoradditions.unobtainium_capacitor.description": "Obtain the ultimate Unobtainium Capacitor. Now nothing can stop you!"
 }
