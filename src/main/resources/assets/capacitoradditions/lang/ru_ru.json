@@ -1,0 +1,14 @@
+{
+  "item.capacitoradditions.allthemodium_capacitor": "Конденсатор Аллтемодиума",
+  "item.capacitoradditions.vibranium_capacitor": "Конденсатор Вибраниума",
+  "item.capacitoradditions.unobtainium_capacitor": "Конденсатор Унобтаниума",
+  "tab.capacitoradditions.capacitor": "Конденсаторы",
+  "advancements.capacitoradditions.root.title": "Конденсаторы",
+  "advancements.capacitoradditions.root.description": "Откройте для себя мощь конденсаторов!",
+  "advancements.capacitoradditions.allthemodium_capacitor.title": "Стандартная скорость слишком медленная?",
+  "advancements.capacitoradditions.allthemodium_capacitor.description": "Попробуйте конденсатор Аллтемодиума!",
+  "advancements.capacitoradditions.vibranium_capacitor.title": "Нужна ещё больше мощность?",
+  "advancements.capacitoradditions.vibranium_capacitor.description": "Конденсатор Вибраниума спешит на помощь!",
+  "advancements.capacitoradditions.unobtainium_capacitor.title": "Наконец-то, решение!",
+  "advancements.capacitoradditions.unobtainium_capacitor.description": "Получите ультимативный конденсатор Унобтаниума. Теперь вас ничто не остановит!"
+}

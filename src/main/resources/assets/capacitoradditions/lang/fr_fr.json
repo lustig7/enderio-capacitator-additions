@@ -1,0 +1,14 @@
+{
+  "item.capacitoradditions.allthemodium_capacitor": "Condensateur d'Allthemodium",
+  "item.capacitoradditions.vibranium_capacitor": "Condensateur de Vibranium",
+  "item.capacitoradditions.unobtainium_capacitor": "Condensateur d'Unobtainium",
+  "tab.capacitoradditions.capacitor": "Condensateurs",
+  "advancements.capacitoradditions.root.title": "Condensateurs",
+  "advancements.capacitoradditions.root.description": "Découvrez la puissance des condensateurs !",
+  "advancements.capacitoradditions.allthemodium_capacitor.title": "La vitesse par défaut est trop lente ?",
+  "advancements.capacitoradditions.allthemodium_capacitor.description": "Essayez un condensateur d'Allthemodium !",
+  "advancements.capacitoradditions.vibranium_capacitor.title": "Besoin de plus de puissance ?",
+  "advancements.capacitoradditions.vibranium_capacitor.description": "Le condensateur de Vibranium à la rescousse !",
+  "advancements.capacitoradditions.unobtainium_capacitor.title": "Enfin, la solution !",
+  "advancements.capacitoradditions.unobtainium_capacitor.description": "Obtenez le condensateur ultime d'Unobtainium. Plus rien ne peut vous arrêter !"
+}
