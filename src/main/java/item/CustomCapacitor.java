@@ -1,9 +1,7 @@
 package item;
 
-
-import com.enderio.api.capacitor.CapacitorModifier;
+import item.CapacitorModifier;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.nbt.NbtOps;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.network.chat.Component;
@@ -33,17 +31,27 @@ public class CustomCapacitor extends Item {
 
     private void saveCapacitorData(ItemStack stack, CapacitorData data) {
         CompoundTag tag = stack.getOrCreateTag();
-        CapacitorData.CODEC.encodeStart(NbtOps.INSTANCE, data)
-                .resultOrPartial(error -> System.err.println("Failed to save capacitor data: " + error))
-                .ifPresent(nbt -> tag.put(CAPACITOR_DATA_TAG, nbt));
+        CompoundTag capTag = new CompoundTag();
+        capTag.putInt("baseValue", (int) data.base());
+        CompoundTag mods = new CompoundTag();
+        for (Map.Entry<CapacitorModifier, Float> entry : data.modifiers().entrySet()) {
+            mods.putFloat(entry.getKey().name(), entry.getValue());
+        }
+        capTag.put("modifiers", mods);
+        tag.put(CAPACITOR_DATA_TAG, capTag);
     }
 
     private CapacitorData loadCapacitorDataFromNBT(ItemStack stack) {
         CompoundTag tag = stack.getTag();
         if (tag != null && tag.contains(CAPACITOR_DATA_TAG)) {
-            return CapacitorData.CODEC.parse(NbtOps.INSTANCE, tag.get(CAPACITOR_DATA_TAG))
-                    .resultOrPartial(error -> System.err.println("Failed to load capacitor data: " + error))
-                    .orElse(capacitorData);
+            CompoundTag capTag = tag.getCompound(CAPACITOR_DATA_TAG);
+            int baseValue = capTag.getInt("baseValue");
+            Map<CapacitorModifier, Float> modifiers = new java.util.HashMap<>();
+            CompoundTag mods = capTag.getCompound("modifiers");
+            for (String key : mods.getAllKeys()) {
+                modifiers.put(CapacitorModifier.valueOf(key), mods.getFloat(key));
+            }
+            return new CapacitorData(baseValue, modifiers);
         }
         return capacitorData;
     }
