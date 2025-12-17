@@ -1,4 +1,4 @@
-package item;
+package item.capacitors;
 
 import com.enderio.base.api.capacitor.*;
 

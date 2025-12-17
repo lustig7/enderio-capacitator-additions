@@ -38,6 +38,11 @@ public class CapacitorAdditions {
                         output.accept(Items.allthemodium_capacitor.get());
                         output.accept(Items.vibranium_capacitor.get());
                         output.accept(Items.unobtainium_capacitor.get());
+                        output.accept(Items.allthemodium_grindstone.get());
+                        output.accept(Items.vibranium_grindstone.get());
+                        output.accept(Items.unobtainium_grindstone.get());
+                        output.accept(Items.infinite_grindstone.get());
+
                     }).build());
 
     public CapacitorAdditions(IEventBus modEventBus, ModContainer modContainer) {
@@ -73,7 +78,7 @@ public class CapacitorAdditions {
     public void onServerStarting(ServerStartingEvent event) {
     }
 
-    @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @EventBusSubscriber(modid = MOD_ID, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {

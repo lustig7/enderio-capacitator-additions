@@ -1,7 +1,7 @@
 package net.enderio.capacitoradditions.component;
 
 import com.enderio.base.api.capacitor.CapacitorData;
-import item.CustomCapacitor;
+import com.enderio.base.api.grindingball.GrindingBallData;
 import net.minecraft.core.component.DataComponentType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -15,6 +15,9 @@ public class ModDataComponents {
 
     public static final DeferredHolder<DataComponentType<?>, DataComponentType<CapacitorData>> CAPACITOR_DATA_TYPE = register("capacitor_data",
             builder -> builder.persistent(CapacitorData.CODEC));
+
+    public static final DeferredHolder<DataComponentType<?>, DataComponentType<GrindingBallData>> GRINDING_BALL_DATA_TYPE = register("grinding_ball",
+            builder -> builder.persistent(GrindingBallData.CODEC));
 
     private static <T>DeferredHolder<DataComponentType<?>, DataComponentType<T>> register(String name,
                                                                                           UnaryOperator<DataComponentType.Builder<T>> builderOperator) {

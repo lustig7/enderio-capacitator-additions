@@ -1,7 +1,10 @@
 {
   "item.capacitoradditions.allthemodium_capacitor": "Allthemodium Capacitor",
+  "item.capacitoradditions.allthemodium_grindstone": "Allthemodium Grindstone",
   "item.capacitoradditions.vibranium_capacitor": "Vibranium Capacitor",
+  "item.capacitoradditions.vibranium_grindstone": "Vibranium Grindstone",
   "item.capacitoradditions.unobtainium_capacitor": "Unobtainium Capacitor",
+  "item.capacitoradditions.unobtainium_grindstone": "Unobtainium Grindstone",
   "tab.capacitoradditions.capacitor": "Capacitors",
   "advancements.capacitoradditions.root.title": "Capacitors",
   "advancements.capacitoradditions.root.description": "Discover the power of Capacitors!",
