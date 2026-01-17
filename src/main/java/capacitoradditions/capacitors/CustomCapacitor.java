@@ -1,4 +1,4 @@
-package item.capacitors;
+package capacitoradditions.capacitors;
 
 import com.enderio.base.api.capacitor.CapacitorData;
 import net.minecraft.world.item.Item;

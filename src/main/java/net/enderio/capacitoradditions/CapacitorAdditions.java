@@ -1,6 +1,6 @@
 package net.enderio.capacitoradditions;
 
-import item.Items;
+import capacitoradditions.CapacitorItems;
 import net.enderio.capacitoradditions.component.ModDataComponents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -33,15 +33,11 @@ public class CapacitorAdditions {
             .register("capacitor_tab", () -> CreativeModeTab.builder()
                     .title(Component.translatable("tab.capacitoradditions.capacitor"))
 
-                    .icon(() -> Items.unobtainium_capacitor.get().getDefaultInstance())
+                    .icon(() -> CapacitorItems.unobtainium_capacitor.get().getDefaultInstance())
                     .displayItems((parameters, output) -> {
-                        output.accept(Items.allthemodium_capacitor.get());
-                        output.accept(Items.vibranium_capacitor.get());
-                        output.accept(Items.unobtainium_capacitor.get());
-                        output.accept(Items.allthemodium_grindstone.get());
-                        output.accept(Items.vibranium_grindstone.get());
-                        output.accept(Items.unobtainium_grindstone.get());
-                        output.accept(Items.infinite_grindstone.get());
+                        output.accept(CapacitorItems.allthemodium_capacitor.get());
+                        output.accept(CapacitorItems.vibranium_capacitor.get());
+                        output.accept(CapacitorItems.unobtainium_capacitor.get());
 
                     }).build());
 
@@ -49,7 +45,7 @@ public class CapacitorAdditions {
 
         modEventBus.addListener(this::commonSetup);
 
-        Items.register(modEventBus);
+        CapacitorItems.register(modEventBus);
 
         CREATIVE_MODE_TABS.register(modEventBus);
         ModDataComponents.register(modEventBus);
