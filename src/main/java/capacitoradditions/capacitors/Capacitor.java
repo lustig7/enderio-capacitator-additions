@@ -1,6 +1,6 @@
 package capacitoradditions.capacitors;
 
-import com.enderio.base.api.capacitor.*;
+import com.enderio.enderio.api.capacitor.CapacitorData;
 
 import java.util.Map;
 

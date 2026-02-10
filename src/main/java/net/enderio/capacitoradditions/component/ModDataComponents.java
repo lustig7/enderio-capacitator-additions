@@ -1,6 +1,6 @@
 package net.enderio.capacitoradditions.component;
 
-import com.enderio.base.api.capacitor.CapacitorData;
+import com.enderio.enderio.api.capacitor.CapacitorData;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.registries.Registries;
 import net.neoforged.bus.api.IEventBus;

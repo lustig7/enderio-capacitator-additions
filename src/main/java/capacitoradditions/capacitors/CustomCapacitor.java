@@ -1,6 +1,6 @@
 package capacitoradditions.capacitors;
 
-import com.enderio.base.api.capacitor.CapacitorData;
+import com.enderio.enderio.api.capacitor.CapacitorData;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.NotNull;
