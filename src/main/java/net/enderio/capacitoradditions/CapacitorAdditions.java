@@ -1,7 +1,6 @@
 package net.enderio.capacitoradditions;
 
 import capacitoradditions.CapacitorItems;
-import net.enderio.capacitoradditions.component.ModDataComponents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -48,7 +47,6 @@ public class CapacitorAdditions {
         CapacitorItems.register(modEventBus);
 
         CREATIVE_MODE_TABS.register(modEventBus);
-        ModDataComponents.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
