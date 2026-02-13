@@ -10,13 +10,16 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.function.Supplier;
+
 public class CustomCapacitor extends Item {
 
-    private final CapacitorData capacitorData;
+    private final Supplier<CapacitorData> capacitorDataSupplier;
+    private CapacitorData capacitorData;
 
-    public CustomCapacitor(Properties properties, CapacitorData capacitorData) {
+    public CustomCapacitor(Properties properties, Supplier<CapacitorData> capacitorDataSupplier) {
         super(properties);
-        this.capacitorData = capacitorData;
+        this.capacitorDataSupplier = capacitorDataSupplier;
     }
 
     public static final DeferredHolder<DataComponentType<?>, DataComponentType<CapacitorData>> CAPACITOR_DATA_TYPE =
@@ -26,6 +29,9 @@ public class CustomCapacitor extends Item {
     @NotNull
     public CapacitorData getCapacitorData(@NotNull ItemStack stack) {
         // Return the capacitor data tied to this item
+        if (capacitorData == null) {
+            capacitorData = capacitorDataSupplier.get();
+        }
         return capacitorData;
     }
 

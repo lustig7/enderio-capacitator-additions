@@ -1,9 +1,10 @@
 package capacitoradditions.capacitors;
 
 import com.enderio.enderio.api.capacitor.CapacitorData;
+import net.enderio.capacitoradditions.Config;
 
 public class Capacitor {
-    public static final CapacitorData ALLTHEMODIUM_CAPACITOR_DATA = CapacitorData.simple(4);
-    public static final CapacitorData VIBRANIUM_CAPACITOR_DATA = CapacitorData.simple(5);
-    public static final CapacitorData UNOBTAINIUM_CAPACITOR_DATA = CapacitorData.simple(6);
+    public static CapacitorData ALLTHEMODIUM_CAPACITOR_DATA() { return CapacitorData.simple(Config.ALLTHEMODIUM_BOOST.get().floatValue()); }
+    public static CapacitorData VIBRANIUM_CAPACITOR_DATA() { return CapacitorData.simple(Config.VIBRANIUM_BOOST.get().floatValue()); }
+    public static CapacitorData UNOBTAINIUM_CAPACITOR_DATA() { return CapacitorData.simple(Config.UNOBTAINIUM_BOOST.get().floatValue()); }
 }
