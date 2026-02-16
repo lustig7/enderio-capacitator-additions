@@ -15,17 +15,17 @@ public class CapacitorItems {
         public static final DeferredItem<Item> allthemodium_capacitor = ITEMS.register(
                         "allthemodium_capacitor",
                         () -> new CustomCapacitor(new Item.Properties(),
-                                        Capacitor.ALLTHEMODIUM_CAPACITOR_DATA));
+                                        Capacitor::ALLTHEMODIUM_CAPACITOR_DATA));
 
         public static final DeferredItem<Item> unobtainium_capacitor = ITEMS.register(
                         "unobtainium_capacitor",
                         () -> new CustomCapacitor(new Item.Properties(),
-                                        Capacitor.UNOBTAINIUM_CAPACITOR_DATA));
+                                        Capacitor::UNOBTAINIUM_CAPACITOR_DATA));
 
         public static final DeferredItem<Item> vibranium_capacitor = ITEMS.register(
                 "vibranium_capacitor",
                 () -> new CustomCapacitor(new Item.Properties(),
-                        Capacitor.VIBRANIUM_CAPACITOR_DATA));
+                        Capacitor::VIBRANIUM_CAPACITOR_DATA));
 
 
         public static void register(IEventBus eventBus) {

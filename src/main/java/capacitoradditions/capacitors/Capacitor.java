@@ -1,25 +1,10 @@
 package capacitoradditions.capacitors;
 
-import com.enderio.base.api.capacitor.*;
-
-import java.util.Map;
+import com.enderio.enderio.api.capacitor.CapacitorData;
+import net.enderio.capacitoradditions.Config;
 
 public class Capacitor {
-    public static final CapacitorData ALLTHEMODIUM_CAPACITOR_DATA = new CapacitorData(
-            4, // Base value
-            Map.of(
-            )
-    );
-    public static final CapacitorData VIBRANIUM_CAPACITOR_DATA = new CapacitorData(
-            5,
-            Map.of(
-            )
-    );
-
-
-    public static final CapacitorData UNOBTAINIUM_CAPACITOR_DATA = new CapacitorData(
-            6, // Base value
-            Map.of(
-            )
-    );
+    public static CapacitorData ALLTHEMODIUM_CAPACITOR_DATA() { return CapacitorData.simple(Config.ALLTHEMODIUM_BOOST.get().floatValue()); }
+    public static CapacitorData VIBRANIUM_CAPACITOR_DATA() { return CapacitorData.simple(Config.VIBRANIUM_BOOST.get().floatValue()); }
+    public static CapacitorData UNOBTAINIUM_CAPACITOR_DATA() { return CapacitorData.simple(Config.UNOBTAINIUM_BOOST.get().floatValue()); }
 }

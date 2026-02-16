@@ -130,10 +130,10 @@ dependencies {
 
     // Example mod dependency using a file as dependency
 
-    compileOnly ("com.enderio:enderio-base:${enderio_version}:api")
+    compileOnly ("com.enderio:enderio:${enderio_version}:api")
 
     // Use EnderIO at runtime
-    runtimeOnly ("com.enderio:enderio-base:${enderio_version}")
+    runtimeOnly ("com.enderio:enderio:${enderio_version}")
 
 
     // Correct Curse Maven dependency syntax
