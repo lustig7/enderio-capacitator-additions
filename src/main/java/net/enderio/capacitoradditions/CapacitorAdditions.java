@@ -35,15 +35,16 @@ public class CapacitorAdditions {
 
                     .icon(() -> CapacitorItems.unobtainium_capacitor.get().getDefaultInstance())
                     .displayItems((parameters, output) -> {
-                        output.accept(CapacitorItems.allthemodium_capacitor.get());
-                        output.accept(CapacitorItems.vibranium_capacitor.get());
-                        output.accept(CapacitorItems.unobtainium_capacitor.get());
-
+                        output.accept(CapacitorItems.allthemodium_capacitor.get().getDefaultInstance());
+                        output.accept(CapacitorItems.vibranium_capacitor.get().getDefaultInstance());
+                        output.accept(CapacitorItems.unobtainium_capacitor.get().getDefaultInstance());
                     }).build());
 
     public CapacitorAdditions(IEventBus modEventBus, ModContainer modContainer) {
         // Register configuration FIRST before registering items
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        modEventBus.addListener(Config::onConfigLoading);
+        modEventBus.addListener(Config::onConfigReloading);
 
         modEventBus.addListener(this::commonSetup);
 

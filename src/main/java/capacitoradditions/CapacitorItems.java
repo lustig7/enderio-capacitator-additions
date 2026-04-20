@@ -3,6 +3,8 @@ package capacitoradditions;
 import capacitoradditions.capacitors.Capacitor;
 import capacitoradditions.capacitors.CustomCapacitor;
 import net.enderio.capacitoradditions.CapacitorAdditions;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -14,17 +16,17 @@ public class CapacitorItems {
 
         public static final DeferredItem<Item> allthemodium_capacitor = ITEMS.register(
                         "allthemodium_capacitor",
-                        () -> new CustomCapacitor(new Item.Properties(),
+                        id -> new CustomCapacitor(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, id)),
                                         Capacitor::ALLTHEMODIUM_CAPACITOR_DATA));
 
         public static final DeferredItem<Item> unobtainium_capacitor = ITEMS.register(
                         "unobtainium_capacitor",
-                        () -> new CustomCapacitor(new Item.Properties(),
+                        id -> new CustomCapacitor(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, id)),
                                         Capacitor::UNOBTAINIUM_CAPACITOR_DATA));
 
         public static final DeferredItem<Item> vibranium_capacitor = ITEMS.register(
                 "vibranium_capacitor",
-                () -> new CustomCapacitor(new Item.Properties(),
+                id -> new CustomCapacitor(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, id)),
                         Capacitor::VIBRANIUM_CAPACITOR_DATA));
 
 
